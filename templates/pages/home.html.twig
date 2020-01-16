@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Agence fictive de Benjamin Stoltz' %}
+
+{% block body %}
+	<div class="jumbotron text-center">
+		<h1>Agence fictive de Benjamin Stoltz</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque modi aliquam dolorem assumenda, voluptas fuga commodi consequatur soluta? Reiciendis eligendi quos sit quaerat animi facere odio distinctio accusamus est commodi!</p>
+	</div>
+	<div class="container">
+		<h2>Les derniers biens</h2>
+		<div class="row flex"></div>
+		{% for property in properties %}
+			<div class="col-3">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">
+						<a href="{{ path('property.show', {id: property.id, slug: property.slug}) }}">{{property.title}}</a>
+						</h5>
+						<p class="card-text">{{property.city}} ({{property.postalCode}})</p>
+						<div class="text-info" style="font-weight: bold; font-size: 2rem;">{{property.formattedPrice}} €</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+
+{% endblock %}
