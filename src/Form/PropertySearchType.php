@@ -3,6 +3,7 @@
 namespace App\Form;
 
 use App\Entity\Option;
+use App\Entity\Contact;
 use App\Entity\PropertySearch;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -37,8 +38,7 @@ class PropertySearchType extends AbstractType
                 'class' => Option::class,
                 'choice_label' => 'name',
                 'multiple' => true
-            ])
-        ;
+            ]);
     }
 
     public function configureOptions(OptionsResolver $resolver)
