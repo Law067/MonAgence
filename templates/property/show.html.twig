@@ -13,12 +13,11 @@
 		{% endfor %}
 
 		{% if not form.vars.valid %}
-		<div class="alert alert-danger">
-		Erreur, veuillez vérifier les champs
-		</div>
+			<div class="alert alert-danger">
+				Erreur, veuillez vérifier les champs
+			</div>
 		{% endif %}
 
-		
 
 		<div class="row">
 			<div class="col-md-8">
@@ -37,8 +36,8 @@
 					m²</h2>
 				<div class="text-primary" style="font-size: 4rem;font-weight: bold;">{{property.formattedPrice}}
 					€</div>
-				<a href="#" class="btn btn-primary">Contacter l'agence</a>
-				<div id="contactForm" class="mt-4">
+				<a href="#" class="btn btn-primary" id="contactButton" {% if form.vars.submitted %} style="display : none;" {% endif %}>Contacter l'agence</a>
+				<div id="contactForm" class="mt-4" {% if not form.vars.submitted %} style="display : none;" {% endif %}>
 					{{ form_start(form) }}
 					<div class="row">
 						<div class="col">{{form_row(form.firstname) }}</div>
@@ -57,6 +56,7 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="jumbotron">
 		<div class="container">
 			<nav class="nav nav-tabs" id="tab"></nav>
