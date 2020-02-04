@@ -5,12 +5,20 @@
  * (and its CSS file) in your base layout (base.html.twig).
  */
 
+ import 'slick-carousel'
+
+
+
 // any CSS you import will output into a single css file (app.css in this case)
 let $ = require('jquery')
 require ('../css/app.css');
 
 require('select2')
 
+$('[data-slider]').slick({
+    dots: true,
+    arrows: true
+})
 $('select').select2()
 let $contactButton = $('#contactButton')
 $contactButton.click(e => {

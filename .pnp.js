@@ -66,6 +66,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       136,
       134,
       132,
+      130,
       128,
       126,
       124,
@@ -135,6 +136,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["core-js", "npm:3.6.4"],
             ["regenerator-runtime", "npm:0.13.3"],
             ["select2", "npm:4.0.13"],
+            ["slick-carousel", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:1.8.1"],
             ["webpack-notifier", "npm:1.8.0"]
           ],
           "linkType": "SOFT"
@@ -8197,6 +8199,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["core-js", "npm:3.6.4"],
             ["regenerator-runtime", "npm:0.13.3"],
             ["select2", "npm:4.0.13"],
+            ["slick-carousel", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:1.8.1"],
             ["webpack-notifier", "npm:1.8.0"]
           ],
           "linkType": "SOFT"
@@ -8489,6 +8492,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["simple-swizzle", "npm:0.2.2"],
             ["is-arrayish", "npm:0.3.2"]
+          ],
+          "linkType": "HARD"
+        }]
+      ]],
+      ["slick-carousel", [
+        ["virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:1.8.1", {
+          "packageLocation": "./.yarn/$$virtual/slick-carousel-virtual-a483949b6d/0/cache/slick-carousel-npm-1.8.1-8382d373c2-1.zip/node_modules/slick-carousel/",
+          "packageDependencies": [
+            ["slick-carousel", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:1.8.1"],
+            ["jquery", null]
+          ],
+          "packagePeers": [
+            "jquery"
           ],
           "linkType": "HARD"
         }]
