@@ -54,7 +54,8 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "App\\": "src/",
+            "Law\\RecaptchaBundle\\": "lib/RecaptchaBundle"
         }
     },
     "autoload-dev": {

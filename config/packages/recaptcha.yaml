@@ -1,0 +1,10 @@
+#services:
+#  recaptcha.type:
+#    class: Law\RecaptchaBundle\Type\RecaptchaSubmitType
+#    tags: ['form.type']
+#    arguments:
+#      $key: '6Le7G9YUAAAAAOyitWUG61PuY4S6OmgkhumCMzdM'
+
+# recaptcha:
+#  key: 6LfoGdYUAAAAAFLUbXdTP7aCjiY3Ych4f8bFpO1C
+#  secret: 6Le7G9YUAAAAAJrKtH4OxGjQC4oj3F9VrXBdxRvY
