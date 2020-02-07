@@ -1,3 +1,5 @@
 framework:
+    templating:
+        engines: ['twig']
     router:
         strict_requirements: null
