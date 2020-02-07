@@ -20,7 +20,7 @@
 ###< symfony/web-server-bundle ###
 
 ###> liip/imagine-bundle ###
-/public/media/cache/
+#/public/media/cache/
 ###< liip/imagine-bundle ###
 
 ###> symfony/webpack-encore-bundle ###
